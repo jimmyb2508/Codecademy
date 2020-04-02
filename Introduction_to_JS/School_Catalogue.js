@@ -55,6 +55,24 @@ class PrimarySchool extends School {
   }
 }
 
+//Create Middle School Class
+
+class MiddleSchool extends School {
+  constructor(name, numberOfStudents, pickupPolicy, averageExamScore) {
+    super(name, 'middle', numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+    this._averageExamScore = averageExamScore;
+  }
+
+  get pickupPolicy() {
+    return this._pickupPolicy;
+  }
+
+  get averageExamScore() {
+    return this._averageExamScore;
+  }
+}
+
 // Create High School Class
 
 class HighSchool extends School {
@@ -73,6 +91,7 @@ class HighSchool extends School {
   }
 }
 
+
 // Create Instance of Primary School
 
 const lorraineHansbury = new PrimarySchool ('Lorraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.', 86);
@@ -85,10 +104,43 @@ console.log(lorraineHansbury);
 
 console.log(lorraineHansbury.averageSATSScore);
 
-Create Instance of High School
+
+// Create Instance of Middle School
+
+const williamHulme = new MiddleSchool ('William Hulme Grammar School', 1000, 'Students must be picked up by a parent, guardian, or a family member over the age of 18.')
+
+console.log(williamHulme);
+
+
+// Create Instance of High School
 
 const alSmith = new HighSchool ('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field'], 'A');
 
 console.log(alSmith.avgGCSEResults);
 
 console.log(alSmith.sportsTeams);
+
+// Create a class called School Catalog that holds a collection of schools
+
+class SchoolCatalog {
+  constructor(schoolList) {
+    this._catalogue = [schoolList];
+  }
+
+  get catalogue() {
+    return this.catalogue;
+  }
+
+  set schoolList(newSchoolList) {
+    this._catalogue.push(newSchoolList);
+  }
+}
+
+const skoolList = new SchoolCatalog();
+
+skoolList.schoolList = lorraineHansbury;
+skoolList.schoolList = williamHulme;
+skoolList.schoolList = alSmith;
+
+
+console.log(skoolList);
