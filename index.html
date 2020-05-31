@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>JB</title>
+  <link rel="icon" href="./images/pic_10.jpg" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+         emailjs.init('user_bJ8EHQpp8qicAlhfaZkZJ');
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate the contact number value
+              this.contact_number.value = Math.random() * 100000 | 0;
+              emailjs.sendForm('contact_service', 'contact_form', this)
+          });
+      }
+  </script>
+</head>
+<>
+  <!-- Header Showcase -->
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <br><br>
+    <img class="codecademy" src="./images/pic_1.svg" alt="Codecademy Logo">
+  </div>
+</header>
+
+<!-- Main Area -->
+<main id="main">
+  <!-- Section A -->
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Projects</h2>
+      <div class="content-text">
+        <p>I subscribe to Codecademy which provides me with materials to develop my software engineering skill-set through the completion of online tutorials. 
+          These tutorials are based on a number of different coding languages and will provide you with an insight into my dedication and dexterity as an engineer.
+          I regularly push the code for these projects to Github which you can view by pressing the button below. Each project resides in a folder that belongs to a specific tutorial.
+          Alternatively, should you wish to view the finished projects, please select any of the links below.</p>
+      </div>
+      <a href="https://github.com/jimmyb2508/Codecademy" class="codecademy-code">View Code</a>
+    </div>
+  </section>
+
+  <!-- Section B -->
+  <section id="section-b" class="grid">
+    <ul>
+      <li>
+        <div class="card">
+          <a href="./Introduction_to_HTML/Fashion_Blog/index.html">
+          <img class="fashion-pic" src="./images/pic_3.jpg" alt="Fashion Blog Picture"></a>
+          <div class="card-content">
+            <h3 class="card-title">Fashion Blog</h3>
+            <p>A simple fashion blog built with only HTML</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <a href="./Introduction_to_HTML/Form_A_Story/index.html">
+          <img class="form_a_story_pic" src="./images/pic_4.svg" alt="Form A Story Picture"></a>
+          <div class="card-content">
+            <h3 class="card-title">Form-A-Story</h3>
+            <p>A HTML form that allows the user to build a customizable story</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <a href="./Introduction_to_HTML/New_York_City_Blog/index.html">
+          <img class="new-york-city-pic" src="./images/pic_5.jpg" alt="Philosofind"></a>
+          <div class="card-content">
+            <h3 class="card-title">New York City Blog</h3>
+            <p>A simple blog constructed with only HTML all about New York City and including media elements.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_HTML/Wine_Festival_Schedule/index.html">
+            <img class="wine-pic" src="./images/pic_6.jpeg" alt="Wine Pouring Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Wine Festival Schedule</h3>
+              <p>A timetable for a wine event that utilizes HTML tables and CSS</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Architecture_Blog/index.html">
+            <img class="arc-pic" src="./images/pic_7.jpg" alt="Architecture Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Architecture Blog</h3>
+              <p>A blog that uses CSS to stylistically position and overlap elements on the page</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Broadway/index.html">
+            <img class="broadway-pic" src="./images/pic_8.jpg" alt=""></a>
+            <div class="card-content">
+              <h3 class="card-title">Broadway Web Site</h3>
+              <p>An agency web page built with CSS, complete with Nav Bar & Footer</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section C2 -->
+    <section id="section-c" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Davies_Burgers/index.html">
+            <img class="burger-pic" src="./images/pic_9.jpeg" alt="Wine Pouring Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Davies Burgers</h3>
+              <p>A web site for a burger bar designed using the Box Model in CSS</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Healthy_Recipes/index.html">
+            <img class="recipe-pic" src="./images/pic_12.jpg" alt="Architecture Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Healthy Recipe</h3>
+              <p>A page that utilizes CSS class selectors and contains a recipe for Kale Caesar Quinoa Salad with Roasted Chicken</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Olivia_Woodruff_Portfolio/index.html">
+            <img class="travel-pic" src="./images/pic_14.jpg" alt=""></a>
+            <div class="card-content">
+              <h3 class="card-title">Olivia Woodruff Portfolio</h3>
+              <p>A portfolio site for a Travel Writer that builds on visual CSS rule sets</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section C3 -->
+    <section id="section-c" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Paint_Store/index.html">
+            <img class="paint-pic" src="./images/pic_15.jpg" alt="Wine Pouring Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Paint Store</h3>
+              <p>A web site for a paint store that utilizes hexadecimal, RGBA and HSL color values.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_CSS/Typography/index.html">
+            <img class="recipe-pic" src="./images/pic_16.jpg" alt="Architecture Picture"></a>
+            <div class="card-content">
+              <h3 class="card-title">Typography</h3>
+              <p>A web site for a travel writer that uses CSS to modify the typography, images and layout</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <a href="./Introduction_to_JS/Wanderlust/index.html">
+            <img class="wander-pic" src="./images/pic_17.jpg" alt=""></a>
+            <div class="card-content">
+              <h3 class="card-title">Wanderlust</h3>
+              <p>A travel app that utilizes APIs to provide information about local attractions and the weather. The app utilizes asynchronous JavaScript.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">My Philosophy</h2>
+      <p>I combine advanced problem solving skills with a client focussed approach, which I apply to developing professional software solutions.</p>
+      <a href="https://jamesbarringtonsoftware.com" class="blog">View Blog</a>
+      <a href="CV .pdf" class="blog">View CV</a>
+    </div>
+  </section>
+
+  <!-- Section E -->
+  <section id="section-e" class="grid">
+    <div class="box">
+      <h2 class="content-title">About Me</h2>
+      <p>My name is James Barrington and I am a 34 year old developer from Manchester. I am a #september19 graduate of the Manchester Codes Software Engineering Bootcamp. I subscribe to Codecademy and work through their tutorials in order to develop my coding skill-set.</p>
+      <a href="https://www.manchestercodes.com/">
+        <img class="aboutmepic" src="./images/pic_1.svg" alt="MCR Codes Picture"></a>
+      </a>
+    </div>
+    <div class="box">
+      <h2 class="content-title">Contact Me</h2>
+      <div class="form-container">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="user_name" placeholder="Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="email" name="user_email" placeholder="email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="message">Message</label>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" placeholder="Message" style="height:80px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Send">
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="main-footer" class="grid">
+  <div>© JB</div>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/mrjamesbarrington/" class="fab fa-linkedin fa-2x"></a>
+    <a href="https://twitter.com/barrington_jb" class="fab fa-twitter fa-2x"></a>
+    <a href="https://github.com/jimmyb2508" class="fab fa-github fa-2x"></a>
+    <a href="https://api.whatsapp.com/send?phone=+447367130803" class="fab fa-whatsapp fa-2x"></a>
+  </div>
+</footer>
