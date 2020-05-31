@@ -105,18 +105,18 @@ p {
   display: inline;
   width: 229px;
   height: 100%;
-  padding-top: 35px;
-  padding-bottom: 32px;
+  padding-top: 11px;
+  padding-bottom: 0px;
 }
 
 /* Tic-Tac-Toe Pic */
 
 .new-york-city-pic {
   display: inline;
-  width: 220px;
+  width: 225px;
   height: 100%;
-  padding-top: 10px;
-  padding-bottom: 0px;
+  padding-top: 11px;
+  padding-bottom: 5px;
 }
 
 /* Wine Festival Pic */
