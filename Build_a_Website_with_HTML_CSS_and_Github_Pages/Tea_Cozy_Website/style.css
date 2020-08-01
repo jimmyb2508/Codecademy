@@ -1,0 +1,169 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.nav-container {
+  height: 69px;
+  width: 100vw;
+  border-bottom: 1px solid seashell;
+  position: absolute;
+  display: flex;
+}
+
+.nav-logo {
+  margin: 10px;
+  height: 50px;
+}
+
+.nav-titles-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-titles {
+  list-style-type: none;
+  text-decoration: underline;
+  display: flex;
+}
+
+.nav-titles li {
+  margin-right: 25px;
+}
+
+/* <------- Main Header -------> */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-pic {
+  margin-top: 70px;
+  position: relative;
+}
+
+.main-titles {
+  position: absolute;
+  top: 350px;
+  width: 1200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-titles h2, h4 {
+  line-height: 0;
+}
+
+/* <------- Sub-Header -------> */
+
+.sub-titles-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-titles {
+  width: 1000px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-titles h3, h5 {
+  line-height: 0;
+}
+
+.sub-title-pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-titles-pics-container{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sub-titles-pics-container img {
+  width: 300px;
+  height: 200px;
+  line-height: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sub-title-pic {
+  line-height: 0;
+}
+
+.sub-title-pic h5 {
+  text-align: center;
+}
+
+/* <------- Locations -------> */
+
+.locations-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+} 
+
+.locations-container img {
+  width: 1200px;
+}
+
+.location-title {
+  position: absolute;
+  width: 1200px;
+  top: 150px;
+}
+
+.location-title h1 {
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  margin: 12px;
+}
+
+.location-cards {
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  top: 200px;
+}
+
+.card {
+  background-color: black;
+  margin: 40px;
+  padding: 20px;
+  width: 300px;
+}
+
+/* <------- Footer -------> */
+
+.footer-wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-wrapper {
+  margin-left: 20px;
+}
