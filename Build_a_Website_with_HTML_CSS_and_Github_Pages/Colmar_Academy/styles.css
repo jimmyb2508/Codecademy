@@ -83,13 +83,11 @@ nav ul {
 
 .banner {
   background-color: #dfe1e5;
-  width: 100vw;
 }
 
 .banner img {
   margin-top: 64px;
   width: 100vw;
-  height: auto;
 }
 
 .banner-header {
@@ -151,13 +149,68 @@ nav ul {
   }
 }
 
+/* <------ Section - Practicing ------> */
+
+.practicing-wrapper {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+
+  .practicing {
+  display: flex;
+  border: solid 5px purple;
+}
+
+  .practicing-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    border: solid 5px red;
+  }
+
+  .practicing-pic {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .practicing-wrapper h1 {
+    margin-bottom: 24px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #4e5151;
+  }
+
+  .practicing-wrapper p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #4e5151;
+    margin-bottom: 24px;
+  }
+
+  .practicing-wrapper h5 {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #4e5151;
+  }
+}
+
 /* <------ Aside ------> */
+
+.aside-section {
+  width: 100vw;
+  border: solid 5px green;
+}
 
 .aside-wrapper {
   display: flex;
   flex-direction: column;
   margin-left: 16px;
+  margin-right: 16px;
   margin-top: 16px;
+  border: solid 5px blue;
 }
 
 .aside-text {
@@ -183,7 +236,26 @@ nav ul {
   margin-bottom: 48px;
 }
 
-/* <------ Start Learning ------> */
+@media only screen and (min-width: 700px) {
+  .aside-section {
+  }
+
+  .aside-pic {
+    width: 35%;
+    height: auto;
+  }
+
+  .aside-text {
+    width: 65%;
+  }
+
+  .aside-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* <------ Summary - Start Learning ------> */
 
 .learning {
   display: flex;
@@ -215,4 +287,35 @@ nav ul {
   justify-content: flex-start;
   font-size: 1.8rem;
   color: #4b4b4b;
+}
+
+/* <------ Summary - Thesis Exhibits ------> */
+
+.thesis {
+  width: 100vw;
+}
+
+.thesis h1 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #4e5151;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+video {
+  width: 100vw;
+  margin-bottom: 24px;
+}
+
+/* <------ Footer ------> */
+
+footer h5 {
+  background-color:#f1f1f1;
+  font-weight: 400;
+  color: #4e5151;
+  width: 100vw;
 }
