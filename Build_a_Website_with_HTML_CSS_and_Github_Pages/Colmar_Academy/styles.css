@@ -173,12 +173,12 @@ nav ul {
   .practicing-pic {
     margin-top: 32px;
     margin-bottom: 32px;
-    width: 100%;
+    width: 83%;
   }
 
   .practicing-wrapper h1 {
     margin-bottom: 24px;
-    font-size: 2.0rem;
+    font-size: 3.0rem;
     font-weight: bold;
     color: #4e5151;
   }
@@ -201,7 +201,6 @@ nav ul {
 
 .aside-section {
   width: 100vw;
-  border: solid 5px green;
 }
 
 .aside-wrapper {
@@ -238,6 +237,7 @@ nav ul {
 
 @media only screen and (min-width: 700px) {
   .aside-section {
+    border: solid 5px green;
   }
 
   .aside-pic {
