@@ -4,6 +4,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+
+}
+
 /* <------ Navbar ------> */
 
 nav {
@@ -122,7 +126,7 @@ nav ul {
   }
 
   .banner img {
-    width: 60%;
+    width: 59%;
     margin: 96px 24px 32px 24px;
   }
 
@@ -159,7 +163,6 @@ nav ul {
 
   .practicing {
   display: flex;
-  border: solid 5px purple;
 }
 
   .practicing-wrapper {
@@ -167,13 +170,12 @@ nav ul {
     flex-direction: column;
     margin-left: 24px;
     margin-right: 24px;
-    border: solid 5px red;
   }
 
   .practicing-pic {
-    margin-top: 32px;
+    margin-top: 40px;
     margin-bottom: 32px;
-    width: 83%;
+    width: 100%;
   }
 
   .practicing-wrapper h1 {
@@ -208,8 +210,7 @@ nav ul {
   flex-direction: column;
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 16px;
-  border: solid 5px blue;
+  border: solid 2px #9a9d9e;
 }
 
 .aside-text {
@@ -237,31 +238,37 @@ nav ul {
 
 @media only screen and (min-width: 700px) {
   .aside-section {
-    border: solid 5px green;
-  }
-
-  .aside-pic {
-    width: 35%;
-    height: auto;
-  }
-
-  .aside-text {
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .aside-wrapper {
     display: flex;
     flex-direction: row;
   }
+
+  .aside-pic {
+    width: 40%;
+    height: auto;
+  }
+
+  .aside-text {
+    width: 65%;
+  }
 }
 
-/* <------ Summary - Start Learning ------> */
+/* <------ Summary - Learning ------> */
 
 .learning {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.learning-desktop {
+  display: none;
 }
 
 .learning h1 {
@@ -289,6 +296,66 @@ nav ul {
   color: #4b4b4b;
 }
 
+@media only screen and (min-width: 700px) {
+  .learning {
+    display: none;
+  }
+
+  .learning-desktop-wrapper {
+    border: solid 1px #f1f1f1;
+    background-color: #f1f1f1;
+  }
+
+  .learning-desktop {
+    display: block;
+    margin-left: 72px;
+    margin-right: 72px;
+    padding-bottom: 32px;
+  }
+
+  .learning-desktop h1 {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #4e5151;
+  }
+
+  .learning-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .learning-cards img {
+    height: auto;
+  }
+
+  .learning-cards h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .learning-cards h3 {
+    margin-bottom: 16px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    width: 450px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+}
+
 /* <------ Summary - Thesis Exhibits ------> */
 
 .thesis {
@@ -311,11 +378,135 @@ video {
   margin-bottom: 24px;
 }
 
+.thesis-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .thesis {
+    display: none;
+  }
+
+  .thesis-desktop {
+  }
+
+  .thesis-desktop h1 {
+  }
+
+  .thesis-desktop-wrapper {
+    display: flex;
+  }
+
+  .thesis-desktop h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #4e5151;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .thesis-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 65%;
+  }
+
+  .thesis-wrapper h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #4e5151;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  video {
+    width: 60vw;
+  }
+
+  .video-wrapper h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #4e5151;
+  }
+
+  .video-wrapper p {
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #4e5151;
+  }
+
+  /* <------ Aside - Thesis ------> */
+
+  .thesis-aside {
+  }
+
+  .thesis-aside-wrapper-fisma, .thesis-aside-wrapper-now {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .thesis-aside-wrapper-fisma {
+      background-color: #d3cece;
+    }
+
+    .thesis-aside-pic {
+      width: 35%;
+      height: auto;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    .thesis-aside-text h2 {
+      font-size: 1.6rem;
+      color: #4e5151;
+    }
+
+    .thesis-aside-text h3 {
+      font-size: 1.3rem;
+      color: #4e5151;
+      font-weight: 400;
+    }
+}
+
 /* <------ Footer ------> */
 
-footer h5 {
+.footer-wrapper {
+  border: solid 1px #f1f1f1;
   background-color:#f1f1f1;
+}
+
+footer h5 {
   font-weight: 400;
   color: #4e5151;
   width: 100vw;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-wrapper {
+    display: flex;
+  }
+
+  footer h5 {
+    margin-top: 16px;
+    margin-left: 24px;
+  }
+
+  footer h3 {
+    color: #4e5151;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
