@@ -191,6 +191,14 @@ p {
   padding-bottom: 0px;
 }
 
+.colmar-pic {
+  display: inline;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 /* Section C */
 
 #section-c {
