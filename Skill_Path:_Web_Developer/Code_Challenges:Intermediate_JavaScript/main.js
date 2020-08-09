@@ -309,3 +309,291 @@ console.log(shoutGreetings(greetings))
 
 
 
+// <-------------------sortYears()------------------>
+
+/* 1.
+Write a function sortYears() that takes in an array of years, and, using the built-in .sort() method, returns that array with the years sorted in descending order.
+
+You can test your function when you’re ready by passing in the years array or by making your own array of years! */
+
+// Write your code here:
+
+const checkYears = (year1, year2) => year1 < year2
+
+const sortYears = (years) => {
+  return years.sort(checkYears);
+}
+
+
+
+
+
+// Feel free to uncomment the below code to test your function:
+
+const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922]
+
+console.log(sortYears(years))
+// Should print [ 2018, 2011, 1999, 1982, 1970, 1963, 1951, 1922 ]
+
+
+
+
+
+
+
+
+
+
+// <-------------------sortYears()------------------>
+
+/* 1.
+Write a function justCoolStuff() that takes in two arrays of strings, and, using the built-in .filter() method, returns an array with the items that are present in both arrays.
+
+let arr1 = ['this', 'not this', 'nor this'];
+let arr2 = ['thing 1', 'thing 2', 'this'];
+
+justCoolStuff(arr1, arr2); // Should return ['this']
+You can test your function when you’re ready by passing in the myStuff and coolStuff arrays or by making arrays of your own! */
+
+// Write your code here:
+
+const justCoolStuff = (myStuff, coolStuff) => {
+  return myStuff.filter((word) => coolStuff.includes(word));
+}
+
+
+// Feel free to uncomment the code below to test your function
+
+const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
+
+const myStuff = [ 'rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway']; 
+
+console.log(justCoolStuff(myStuff, coolStuff))
+// Should print [ 'fruit-by-the-foot', 'skateboards', 'my room' ]
+
+
+
+
+
+
+
+
+
+
+
+// <-------------------isTheDinnerVegan()------------------>
+
+/* 1.
+Write a function isTheDinnerVegan() that takes in an array of food objects in the format: */
+
+{name: 'cabbage', source: 'plant' }
+
+/*
+and returns a boolean value based on whether or not every item in the array has entirely plant-based origins. */
+
+const meal = [{name: 'arugula', source: 'plant'}, {name: 'tomatoes', source: 'plant'}, {name: 'lemon', source:'plant'}, {name: 'olive oil', source: 'plant'}];
+
+isTheDinnerVegan(meal); // Should return true
+
+/*
+You can test your function when you’re ready by passing in the dinner array or by making your own! */
+
+// Write your code here:
+
+
+
+const isTheDinnerVegan = (dinner) => {
+  return dinner.every(isVegan);
+}
+
+
+// Feel free to comment out the code below to test your function
+
+const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'dairy'}, {name: 'ketchup', source:'plant'}, {name: 'bun', source: 'plant'}, {name: 'dessert twinkies', source:'unknown'}];
+
+console.log(isTheDinnerVegan(dinner))
+// Should print false
+
+// console.log(dinner);
+
+function isVegan(dinner) {
+  if (dinner.source === 'plant') {
+    return true;
+  }
+  return false;
+}
+
+console.log(isVegan(dinner));
+
+
+
+
+
+
+
+
+
+// <-------------------sortSpeciesByTeeth()------------------>
+
+/* 1.
+Write a function sortSpeciesByTeeth() that takes in an array of species objects in the format:
+
+{speciesName: 'shark', numTeeth: 50 }
+and sorts the array in ascending order based on the average number of teeth that species possesses (numTeeth) .
+
+You’ll need to access each object’s .numTeeth property. Feel free to either write a named comparison function, or use an anonymous function for your argument to .sort().
+
+You can test your function when you’re ready by passing in the speciesArray array or by making your own! */
+
+const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
+
+// Write your code here:
+
+const compareTeeth = (speciesObj1, speciesObj2) => 
+speciesObj1.numTeeth > speciesObj2.numTeeth;
+
+
+const sortSpeciesByTeeth = (speciesArray) => {
+  const arrange = speciesArray.sort(compareTeeth);
+  return arrange;
+}
+
+// Feel free to comment out the code below when you're ready to test your function!
+
+console.log(sortSpeciesByTeeth(speciesArray))
+
+// Should print [ { speciesName: 'human', numTeeth: 32 },
+  // { speciesName: 'dog', numTeeth: 42 },
+  // { speciesName: 'shark', numTeeth: 50 },
+  // { speciesName: 'alligator', numTeeth: 80 } ]
+
+
+
+
+
+
+
+
+
+
+// <-------------------findMyKeys()------------------>
+
+/* 1.
+Write a function, findMyKeys(), that takes in an array of strings which may or may not contain 'keys'. If the keys are in the array, your function should return the index at which they can be found. If they’re not in the array, your function should return -1. */
+
+const drawer = ['rubber bands', 'tape', 'old menus', 'batteries'];
+findMyKeys(drawer);
+
+// Should return -1
+
+/*
+You can use any technique you want to accomplish this task. Though, if you look, there’s a built-in method that will make pretty quick work of it.
+
+You can test your function when you’re ready by passing in the randomStuff array or by making your own array! */
+
+// Write your code here:
+
+const keys = (element) => element === 'keys';
+
+const findMyKeys = (stuff) => {
+  return stuff.findIndex(keys);
+}
+
+// Feel free to comment out the code below to test your function
+
+const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
+
+console.log(findMyKeys(randomStuff))
+
+// Should print 4
+
+
+
+
+
+
+
+
+
+
+
+// <----------------------dogFactory()----------------------->
+
+/* 1.
+Write a function, dogFactory(). It should:
+
+have 3 parameters: name, breed, and weight (in that order)
+expect name and breed to be strings
+expect weight to be a number
+return an object
+have each of those parameters as keys on the returned object returned with the values of the arguments that were passed in */
+
+dogFactory('Joe', 'Pug', 27)
+
+// Should return { name: 'Joe', breed: 'Pug', 
+
+/* 2.
+Add getters and setters for each of the three properties and change the property names to have an underscore prepended. */
+
+/* 3.
+Add two methods to your object: .bark() which returns ‘ruff! ruff!’ and .eatTooManyTreats() which should increment the weight property by 1. */
+
+// Write your code here:
+
+const dogFactory = (name, breed, weight) => {
+  return {
+    _name: name,
+    _breed: breed,
+    _weight: weight,
+    get name() {
+      return this._name;
+    },
+    get breed() {
+      return this._breed;
+    },
+    get weight() {
+      return this._weight;
+    },
+    set name(newName) {
+      if (typeof newName === 'string') {
+        this._name = newName;
+      } else {
+        console.log('You must assign a name')
+      }
+    },
+    set breed(newBreed) {
+      if (typeof newBreed === 'string') {
+        this._breed = newBreed;
+      } else {
+        console.log('You must assign a breed')
+      }
+    },
+    set weight(newWeight) {
+      if (typeof newWeight === 'number') {
+        this._weight = newWeight;
+      } else {
+        console.log('You must assign a weight')
+      }
+    },
+    bark() {
+      return 'ruff! ruff!';
+    },
+    eatTooManyTreats() {
+      return this._weight++;
+    }
+  }
+}
+
+const dog = dogFactory('Joe', 'Pug', 27);
+console.log(dog);
+console.log(dog.name);
+console.log(dog.breed);
+console.log(dog.weight);
+console.log(dog.bark());
+console.log(dog.eatTooManyTreats());
+
+
+
+
+
+
