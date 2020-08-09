@@ -152,3 +152,160 @@ const smallestPowerOfTwo = arr => {
 console.log(smallestPowerOfTwo(numbers));
 
 // Should print the returned array [ 8, 4, 16, 32 ] instead prints the returned array [8]
+
+
+
+
+
+
+
+
+
+// <-----------declineEverything() and acceptEverything()----------->
+
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
+
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+}
+
+const grudginglyAccept = (veg) => {
+  console.log('OK, I guess I will eat some ' + veg + '.');
+}
+
+/* 1.
+Write a function declineEverything() that takes in an array of strings and, using .forEach(), loops through each element in the array and calls politelyDecline() with each of them.
+
+The .forEach() function should apply politelyDecline() directly; it should NOT merely receive argument function that uses politelyDecline().
+
+You can test your function when you’re ready by passing in the veggies array or by making your own array! */
+
+// Write your code here:
+
+const declineEverything = (arr) => {
+  arr.forEach(politelyDecline);
+}
+
+console.log(declineEverything(veggies));
+
+/* 2.
+Now we need to get healthy! Write a function acceptEverything() that takes in an array of strings and loops through each element in the array and grudgingly accepts each of them, by logging to the console in the following format: 'Ok, I guess I will eat some [element].'
+
+You can use any technique you want to accomplish this task. You can test your function when you’re ready by passing in the veggies array or by making your own array! */
+
+// Write your code here:
+
+const acceptEverything = (arr) => {
+  console.log(arr.forEach(grudginglyAccept));
+}
+
+acceptEverything(veggies);
+
+
+
+
+
+
+
+
+
+// <-----------declineEverything() and acceptEverything()----------->
+
+const numbers = [2, 7, 9, 171, 52, 33, 14];
+
+const toSquare = num => num * num
+
+const squareNums = arr => arr.map(toSquare) 
+
+
+// Using an anonymous function:
+const squareNums = arr => arr.map(e => e * e)
+
+// As a function declaration plus using our named function:
+function squareNums(arr) {
+    return arr.map(toSquare)
+}
+
+console.log(squareNums(numbers));
+
+
+
+
+
+
+
+
+
+
+
+// <-------------------shoutGreetings()------------------>
+
+/* 1.
+Write a function shoutGreetings() that takes in an array of strings and returns a new array. This new array should contain all the strings from the argument array but with capitalized letters and an exclamation point appended to the end: 'heya' will become 'HEYA!'
+
+You can use any technique you want to accomplish this task.
+
+You can test your function when you’re ready by passing in the greetings array or by making your own array! */
+
+// Write your code here:
+
+// Test tpUpperCase() method
+
+const test = 'test';
+
+const shoutGreeting = (arr) => {
+  console.log(arr.toUpperCase()); 
+}
+
+// console.log(shoutGreeting(test));
+
+// <------------------------------->
+
+// Test capitalisation and exclamation
+
+const tester = ['test', 'example', 'attempt'];
+
+const capitalize = arr => arr.map(item => item.toUpperCase());
+
+const exclamation = arr => arr.map(item => item + '!');
+
+// console.log(capitalize(tester));
+
+// console.log(exclamation(tester));
+
+// <------------------------------->
+
+// Incorporate above methods to function
+
+const shoutGreetings = (arr) => {
+  const capitals = capitalize(arr);
+  const mark = exclamation(capitals);
+  return mark;
+}
+
+// WOOHOO!
+
+// <------------------------------->
+
+// Feel free to uncomment out the code below to test your function!
+
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+
+console.log(shoutGreetings(greetings))
+// Should print [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
