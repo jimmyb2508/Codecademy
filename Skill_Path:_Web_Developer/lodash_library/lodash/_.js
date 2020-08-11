@@ -20,7 +20,14 @@ const _ = {
     }
     const isInRange = start <= number && number < end; 
     return isInRange
-  }
+  },
+
+  words(words) {
+    const nameList = words.split(' ')
+    return nameList
+  },
+
+
 
 };
 
