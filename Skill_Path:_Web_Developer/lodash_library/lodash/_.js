@@ -63,6 +63,14 @@ const _ = {
     }
     undefined
     return undefined;
+  },
+
+  drop(arr, number) {
+    if ( number === undefined ) {
+      return arr.slice(1);
+    } else {
+      return arr.slice(number)
+    }
   }
 
 };
