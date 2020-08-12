@@ -42,6 +42,27 @@ const _ = {
     if (hasValue != undefined) {
       return true
     } return false;
+  },
+
+  invert(object) {
+    let invertedObject = {};
+    for (let key in object) {
+      const originalValue = object[key];
+      invertedObject = {originalValue : key}
+    }
+    return invertedObject;
+  },
+
+  findKey(object, predicate) {
+    for(let key in object) {
+      let value = object[key];
+      let predicateReturnValue = predicate(value);
+      if(predicateReturnValue) {
+        return key;
+      }
+    }
+    undefined
+    return undefined;
   }
 
 };
