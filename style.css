@@ -67,6 +67,26 @@ p {
   padding-bottom: 2em;
 }
 
+#section-a2 {
+  background: #fff;
+  color: #333;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.foundations {
+  width: 100px;
+  height: 100%;
+}
+
+.foundations:hover {
+  transition: transform .4s; /* Animation */
+  transform: scale(8.5);
+}
+
 /* Section B */
 
 #section-b {
@@ -201,7 +221,7 @@ p {
 
 .lodash-pic {
   display: inline;
-  width: 190px;
+  width: 163px;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 0px;
@@ -209,7 +229,63 @@ p {
 
 .chore-door-pic {
   display: inline;
-  width: 100px;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.piano-pic {
+  display: inline;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.arts-pic {
+  display: inline;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.excursion-pic {
+  display: inline;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.to-do-pic {
+  display: inline;
+  width: 220px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.camera-pic, .coffee-pic {
+  display: inline;
+  width: 230px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.tea-pic {
+  display: inline;
+  width: 225px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.twenty-pic {
+  display: inline;
+  width: 218px;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 0px;
