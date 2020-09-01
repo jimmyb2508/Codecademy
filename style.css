@@ -107,7 +107,48 @@ p {
 
 .card-content {
   padding: 1.5em;
-  display: inline-block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Languages */
+
+.languages {
+  display: flex;
+  margin-top: 20px;
+}
+
+.html-pic {
+  width: 35px;
+  height: auto;
+  padding: 5px;
+}
+
+.css-pic {
+  width: 35px;
+  height: auto;
+  padding: 5px;
+}
+
+.js-pic {
+  width: auto;
+  height: 50px;
+  padding: 5px;
+}
+
+.react-pic {
+  width: auto;
+  height: 50px;
+  padding: 5px;
+}
+
+.handlebars-pic {
+  width: 50px;
+  height: auto;
+  padding: 5px;
 }
 
 /* Fashion-Blog */
@@ -126,7 +167,15 @@ p {
   width: 229px;
   height: 100%;
   padding-top: 11px;
-  padding-bottom: 0px;
+  padding-bottom: 9px;
+}
+
+.ravenous-logo {
+  display: inline;
+  width: 157px;
+  height: 100%;
+  padding-top: 19px;
+  padding-bottom: 5px;
 }
 
 /* Tic-Tac-Toe Pic */
@@ -135,8 +184,8 @@ p {
   display: inline;
   width: 225px;
   height: 100%;
-  padding-top: 11px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
 /* Wine Festival Pic */
@@ -207,8 +256,8 @@ p {
   display: inline;
   width: 220px;
   height: 100%;
-  padding-top: 10px;
-  padding-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
 }
 
 .colmar-pic {
@@ -267,7 +316,15 @@ p {
   padding-bottom: 0px;
 }
 
-.camera-pic, .coffee-pic {
+.camera-pic {
+  display: inline;
+  width: 230px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.coffee-pic {
   display: inline;
   width: 230px;
   height: 100%;
@@ -372,6 +429,7 @@ p {
   padding: 1em 2em;
   border: 1px solid #666;
   margin: 0.5em 0;
+  width: 80px;
 }
 
 .blog, .codecademy-code:hover {
