@@ -118,6 +118,9 @@ p {
 
 .languages {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 150px;
   margin-top: 20px;
 }
 
