@@ -359,6 +359,14 @@ p {
   padding-bottom: 0px;
 }
 
+.boss-pic {
+  display: inline;
+  width: 250px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Section C */
 
 #section-c {
