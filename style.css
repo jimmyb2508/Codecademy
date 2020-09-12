@@ -375,6 +375,30 @@ p {
   padding-bottom: 9px;
 }
 
+.dog-pic {
+  display: inline;
+  width: 250px;
+  height: 100%;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.eightball-pic {
+  display: inline;
+  width: 250px;
+  height: 100%;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.race-pic {
+  display: inline;
+  width: 210px;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 38px;
+}
+
 /* Section C */
 
 #section-c {
