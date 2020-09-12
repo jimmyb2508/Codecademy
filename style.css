@@ -367,6 +367,14 @@ p {
   padding-bottom: 10px;
 }
 
+.temp-pic {
+  display: inline;
+  width: 206px;
+  height: 100%;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
 /* Section C */
 
 #section-c {
