@@ -399,6 +399,30 @@ p {
   padding-bottom: 38px;
 }
 
+.hands-pic {
+  display: inline;
+  width: 250px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sleep-pic {
+  display: inline;
+  width: 235px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.run-pic {
+  display: inline;
+  width: 213px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Section C */
 
 #section-c {
