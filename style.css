@@ -399,7 +399,7 @@ p {
   padding-bottom: 38px;
 }
 
-.hands-pic {
+.hands-pic, .library-pic {
   display: inline;
   width: 250px;
   height: 100%;
@@ -426,6 +426,30 @@ p {
 .whale-pic {
   display: inline;
   width: 250px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.school-pic {
+  display: inline;
+  width: 253px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.school-pic {
+  display: inline;
+  width: 253px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.message-pic {
+  display: inline;
+  width: 251px;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
