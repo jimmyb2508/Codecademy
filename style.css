@@ -73,13 +73,14 @@ p {
   padding-bottom: 1em;
   padding-top: 1em;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
 }
 
 .foundations {
   width: 100px;
   height: 100%;
+  padding: 20px;
+  display: inline-block;
 }
 
 .foundations:hover {
