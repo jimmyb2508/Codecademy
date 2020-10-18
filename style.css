@@ -450,9 +450,9 @@ p {
 
 .flash-pic {
   display: inline;
-  width: 251px;
+  width: 150px;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
